@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">HourTracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Welkom</string>
+    <string name="second_fragment_label">Deze maand</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- kalender gedeelte -->
+    <string name="gewerkt">Gewerkt:</string>
+    <string name="totaal">Totaal:</string>
+    <string name="gewerktAantal">00:00</string>
+    <string name="totaalAantal">00:00</string>
+
+
+    <string name="dag01">01</string>
+    <string name="dag02">02</string>
+    <string name="dag03">03</string>
+    <string name="dag04">04</string>
+    <string name="dag05">05</string>
+    <string name="dag06">06</string>
+    <string name="dag07">07</string>
+    <string name="dag08">08</string>
+    <string name="dag09">09</string>
+    <string name="dag10">10</string>
+
+    <string name="dag11">11</string>
+    <string name="dag12">12</string>
+    <string name="dag13">13</string>
+    <string name="dag14">14</string>
+    <string name="dag15">15</string>
+    <string name="dag16">16</string>
+    <string name="dag17">17</string>
+    <string name="dag18">18</string>
+    <string name="dag19">19</string>
+    <string name="dag20">20</string>
+
+    <string name="dag21">21</string>
+    <string name="dag22">22</string>
+    <string name="dag23">23</string>
+    <string name="dag24">24</string>
+    <string name="dag25">25</string>
+    <string name="dag26">26</string>
+    <string name="dag27">27</string>
+    <string name="dag28">28</string>
+    <string name="dag29">29</string>
+    <string name="dag30">30</string>
+
+    <string name="dag31">31</string>
+
+
+
+</resources>
