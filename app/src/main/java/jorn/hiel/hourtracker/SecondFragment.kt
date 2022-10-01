@@ -19,6 +19,8 @@ import java.util.*
  */
 class SecondFragment : Fragment() {
 
+    private val buttons= mutableListOf<Button>()
+
     private var _binding: FragmentSecondBinding? = null
 
     // This property is only valid between onCreateView and
@@ -44,6 +46,14 @@ class SecondFragment : Fragment() {
         }
         setButtons()
         setMonth()
+
+        for (button in buttons){
+            button.setOnClickListener{
+                findNavController().navigate(R.id.action_SecondFragment_to_detailDayActivity)
+            }
+        }
+
+
     }
 
     override fun onDestroyView() {
@@ -53,7 +63,7 @@ class SecondFragment : Fragment() {
 
     private fun setButtons(){
 
-        val buttons= mutableListOf<Button>()
+
 
         buttons.add(this.view!!.findViewById(R.id.button01))
         buttons.add(this.view!!.findViewById(R.id.button02))
@@ -103,12 +113,17 @@ class SecondFragment : Fragment() {
         }
     }
 
+    /**
+     *  Checks if the day given falls in a weekend
+     *  @param int number of the week, between 1 and 7
+     */
     private fun isWeekDay(day:Int): Boolean {
         //counter 0 based collection
         val todaydate: LocalDate = LocalDate.now()
         if(todaydate.withDayOfMonth(day+1).dayOfWeek>DayOfWeek.FRIDAY){return false}
         return true
     }
+
 
     private fun setMonth(){
         val monthLabel : TextView = this.view!!.findViewById(R.id.monthLabel)
